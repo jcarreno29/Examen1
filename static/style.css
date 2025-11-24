@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +32,7 @@ h1 {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-/* Estilos para botones */
+
 .btn {
     display: inline-block;
     padding: 15px 30px;
@@ -78,7 +78,7 @@ h1 {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilos para formularios */
+
 .form-container {
     text-align: left;
     margin-bottom: 30px;
@@ -114,7 +114,7 @@ input[type="password"]:focus {
     box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
 }
 
-/* Estilos para resultados */
+
 .result-container {
     background: #f8f9fa;
     border-radius: 10px;
@@ -140,7 +140,7 @@ input[type="password"]:focus {
     font-weight: bold;
 }
 
-/* Estilos para información adicional */
+
 .info {
     background: #e9ecef;
     border-radius: 8px;
@@ -166,7 +166,7 @@ input[type="password"]:focus {
     margin-top: 25px;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .container {
         padding: 20px;
