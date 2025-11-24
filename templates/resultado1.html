@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado Ejercicio 1</title>
+    <link href="../static/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Resultado de la Compra</h1>
+        <div class="result-container">
+            <p><strong>Nombre:</strong> {{ nombre }}</p>
+            <p><strong>Total sin descuento:</strong> ${{ "{:,.0f}".format(total_sin_descuento) }}</p>
+            {% if descuento > 0 %}
+            <p><strong>Descuento aplicado:</strong> {{ descuento }}%</p>
+            {% else %}
+            <p><strong>Descuento aplicado:</strong> 0%</p>
+            {% endif %}
+            <p class="total-final"><strong>Total a pagar:</strong> ${{ "{:,.0f}".format(total_con_descuento) }}</p>
+        </div>
+        <div class="action-buttons">
+            <a href="{{ url_for('ejercicio1') }}" class="btn btn-back">Realizar otra compra</a>
+            <a href="{{ url_for('index') }}" class="btn btn-menu">Volver al Menú</a>
+        </div>
+    </div>
+</body>
+</html>
